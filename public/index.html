@@ -4,46 +4,111 @@
 <head>
   <meta charset="UTF-8">
   <title>Wesley's Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Roboto+Condensed" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Wesley McCowin</a>
-      <nav>
-        <a href="/index">About</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
 
-      <img src="images/HEADSHOT.jpg" class="auth-image" alt="Wesley McCowin">
 
-      <p>Team-oriented and self-motivated individual with strong integrity and professional ethics holding an Associates Degree in Petroleum Engineering Technology achieved at Houston Community College.</p>
 
-      <p> I have also completed NACE (National Academy of Corrosion Engineers) Coating Inspection Level I and Level II, which certifies me as a NACE Coating Inspector Level II. I also have completed classroom hours for VT/MT/PT (NDT) </p>
+<div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="logo" class="display-4">Wes McCowin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <div>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/index">About me</a>
+                    <a class="dropdown-item" href="/portfolio">Portfolio</a>
+                    <a class="dropdown-item" href="/contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+</div>
 
-      <p>I have spent the last 3 plus years as a GIS technician working on various energy related projects throughout Houston,Tx. I am currently enrolled in the UTHouston's Coding Boot Camp. This class will prepare me to handle the in's and out's of web developement
-          , from Front-end to Back-End developemnt and everything in between. I plan to be done with the course by August, and hopefully working in the industry as a full-fledge programmer.
-      </p>
+<div id="main-container" class="container">
+    
+    <section class="main-section" class="clearfix" class="row">
+        <div class="col-auto">
+            <h1 class="display-4">About me</h1>
+            <img src="images/HEADSHOT.jpg" width=150px height=150px class="rounded">
+            <p>My name is Wesley Morales-McCowin, I hold an Associate’s Degree in Petroleum Engineering from Houston Community College, and am currently finishing the Houston Coding Bootcamp sponsored by the University of Texas at Austin.
+               The course has pushed me far into many coding technologies which include HTML, CSS, JavaScript, JQuery, Ajax, Firebase, Node JS, MySQL, Express, Handlebars, Sequelize, React, and MongoDB. </p>
 
+            <p>Throughout the duration of the course, I have found great joy and passion in being able to build state-of-the-art, user-friendly, easy to use websites and applications, and a, very confident that I would be an excellent addition to any organization.
+               In addition to the Houston Coding Bootcamp, I actively explore other new technologies and work to stay up to date on any new advancements happening in the industry. </p>
+      
+            <p>Listed on my portfolio page, there is a list of projects and web applications that I have been working on that demonstrate my knowledge on the topics listed above. 
+            </p> 
+        </div>  
+        <br> <br>
+    </section>   
+    <section class="main-section" class="clearfix" class="row">
+            <div class="card">
+                <div class="cardbody">
+                    <h1 class="text-center">Click the Links to find out more!</h1>
+                        <div class="row">
+                            <div class="col-sm-4">
+                            <a href="https://www.facebook.com/wesley.m.mccowin">
+                                <img id="facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7WZj///8yU5Xn6vGKmLwgR48jSZBAXZvh5O01VZYmS5FyhLA6WJjR1+QpTZJCX5yToMGptM7K0eFleqpNZ6C8xNiAkbhcc6fs7/Vne6va3ul3ibOyu9Lz9fnCyty6w9eap8UANIcVQo1IZJ5TbKPZNQ91AAAD90lEQVR4nO3dWXObMBSGYSGMiggWaxwbL+mS//8ba+x62k4bW4Clc6T53ptchfAMixwEWCS/auuuErFUdXV7g4nrj0YXUpfUK/a0Si0L3fwhTPuCep0cZPr0JhyUpl4bJ2k1XIWpimf3/LtSpRdhH+cWHNP9KGxiPAZvmeYsjHcLjulEtDFvQiGKVtSSeiWcJmuxi3wv3Ykq1qHiWhnPR1GEEEIIIYQQQgghhOampTGFUtml8w81VpgxKUOf7SylyXS3al7X+fY4TgIez23TNB/W7en90NSrfdeXJgt01kwb9WN1SpPHHXMRIFFmb42N7tcUdnAZWdvzAhSa8jCFF5xQymaiLyxhmW2Ok4EhCWW5nu4LSVjs5vgCEqp6HjAYYTb1FBqaMDvNBQYizF5nA8MQqumjYFhCs1oADEGo35YAAxCWZhu5sJg9TgQiXLiPBiDM8siFcrMQyF5YLDvN8Bcu34TchWrpUchduPhEyl5oFnziDkOolgN5C/U+duEzdlLeQjXj4mFQQv3xBCBroZz4n+82H9b/NHCee5pwGB5fN71Uxf+iVtzL+gNNvs+MLBlvq08qpSWwzgJ9bKns7YCdoV7TuckXK+BLoBtQjM+U2QAPino952esrgOHuwUtB4t31qPBg4r2MTAJ+tlIZTPlK8MbBX9nM+DnAZ9nzkKL22ZOwY6FYzbCJnrh15AHC5FZCMN+kN5GuIKQdRBCyD8IIeQfhBDyD0II+QchhPyDEEL+QRiGsPryaZWxEZafL+CyEOJ3Pmq7Wd4lpbSzbx6ExG+X9SA80E5seBASX/b3INxHL/ygnQX3ICSe5ncvPBLPgrsXUs/zuxeeiG+3cS+knud3L6SeBXcvfIn+XNoT3zLlXmhiF26pbwpzLhyo7810LiS/7c25kHo4dC8kv1DlXNhR30HsXEj+7SrOhdSHoXNhSj0cOheuqYdD50LiS4kehPT3SLsW7qkHC+fCt+iF1D7nwiP5ica1kPpSonthy2Ab7tL8ThaI7Z1fT+kHi/HLau/0zWKWe/P9zgIYAO9n89wT+T+Ai4rjXox7QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEMIJEb31zJewrATRd1/7EupOEL2M15dQ1oLoGxR8CYtWEL263dtemgii14B6EprmLEx6iq3oR6j7ZBSmimDA8CMc3/NzFiaD8r8VfQi1GpKrMEl778eiB6HpL39DXBfW6EJqnzurW2GpZaGb61LEbXFt3VXPJDzIrbDq6va2lJ+v4klcP+jThQAAAABJRU5ErkJggg==">
+                            </a>
+                            </div>
+                            <div class="col-sm-4">
+                            <a href="https://www.linkedin.com/in/wes-morales-mccowin-63422595">
+                                <img src="https://images.techhive.com/images/idge/imported/imageapi/2014/03/how-to-network-effectively-on-linkedin-100257173-primary.idge.jpg">
+                            </a>
+                            </div>
+                            <div class="col-sm-4">
+                            <a href="https://www.instagram.com/wesmccowin_/">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDLiY_5CuXhDs1ih9opLJiXn6DpGYkn9lUS3nuQ3f7_deGDPsjNQ">
+                            </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+
+          
     </section>
 
-  </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+
+
+</div>
+
+<footer>
+        <div class="container">
+          Copyright &copy;
+        </div>
+      </footer>
 </body>
-
+    
 </html>
+
+
+ 
+
